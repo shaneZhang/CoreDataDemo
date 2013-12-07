@@ -21,6 +21,10 @@
 		1B0A93721853448B0027EC7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0A93541853448B0027EC7E /* UIKit.framework */; };
 		1B0A937A1853448B0027EC7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A93781853448B0027EC7E /* InfoPlist.strings */; };
 		1B0A937C1853448B0027EC7E /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A937B1853448B0027EC7E /* CoreDataDemoTests.m */; };
+		1B0A93861853449E0027EC7E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0A93851853449E0027EC7E /* CoreData.framework */; };
+		1B0A938B1853464D0027EC7E /* Person.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A93891853464D0027EC7E /* Person.xcdatamodeld */; };
+		1B0A939418534D4F0027EC7E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A939318534D4F0027EC7E /* Person.m */; };
+		1B0A939718534D4F0027EC7E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A939618534D4F0027EC7E /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		1B0A93771853448B0027EC7E /* CoreDataDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataDemoTests-Info.plist"; sourceTree = "<group>"; };
 		1B0A93791853448B0027EC7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B0A937B1853448B0027EC7E /* CoreDataDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoTests.m; sourceTree = "<group>"; };
+		1B0A93851853449E0027EC7E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1B0A938A1853464D0027EC7E /* Person.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Person.xcdatamodel; sourceTree = "<group>"; };
+		1B0A939218534D4F0027EC7E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1B0A939318534D4F0027EC7E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1B0A939518534D4F0027EC7E /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		1B0A939618534D4F0027EC7E /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0A93861853449E0027EC7E /* CoreData.framework in Frameworks */,
 				1B0A93531853448B0027EC7E /* CoreGraphics.framework in Frameworks */,
 				1B0A93551853448B0027EC7E /* UIKit.framework in Frameworks */,
 				1B0A93511853448B0027EC7E /* Foundation.framework in Frameworks */,
@@ -101,6 +112,7 @@
 		1B0A934F1853448B0027EC7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B0A93851853449E0027EC7E /* CoreData.framework */,
 				1B0A93501853448B0027EC7E /* Foundation.framework */,
 				1B0A93521853448B0027EC7E /* CoreGraphics.framework */,
 				1B0A93541853448B0027EC7E /* UIKit.framework */,
@@ -112,6 +124,7 @@
 		1B0A93561853448B0027EC7E /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B0A9388185344DD0027EC7E /* Model */,
 				1B0A935F1853448B0027EC7E /* ZYQAppDelegate.h */,
 				1B0A93601853448B0027EC7E /* ZYQAppDelegate.m */,
 				1B0A93621853448B0027EC7E /* Main.storyboard */,
@@ -150,6 +163,18 @@
 				1B0A93781853448B0027EC7E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B0A9388185344DD0027EC7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B0A93891853464D0027EC7E /* Person.xcdatamodeld */,
+				1B0A939218534D4F0027EC7E /* Person.h */,
+				1B0A939318534D4F0027EC7E /* Person.m */,
+				1B0A939518534D4F0027EC7E /* Book.h */,
+				1B0A939618534D4F0027EC7E /* Book.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +277,9 @@
 			files = (
 				1B0A935D1853448B0027EC7E /* main.m in Sources */,
 				1B0A93611853448B0027EC7E /* ZYQAppDelegate.m in Sources */,
+				1B0A939418534D4F0027EC7E /* Person.m in Sources */,
+				1B0A938B1853464D0027EC7E /* Person.xcdatamodeld in Sources */,
+				1B0A939718534D4F0027EC7E /* Book.m in Sources */,
 				1B0A93671853448B0027EC7E /* ZYQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +499,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B0A93891853464D0027EC7E /* Person.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B0A938A1853464D0027EC7E /* Person.xcdatamodel */,
+			);
+			currentVersion = 1B0A938A1853464D0027EC7E /* Person.xcdatamodel */;
+			path = Person.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1B0A93451853448B0027EC7E /* Project object */;
 }
